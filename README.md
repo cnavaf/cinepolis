@@ -8,7 +8,7 @@ We selected random forest approach after studing the dataset, mainly because we 
 
 # Results
 The following graph shows the 7-day in advance forecasting.
-![](./images/Figure_1.png.png)
+![](images/Figure_1.png.png)
 
 # Conclusion
 This analysis uses a tickets sales combined with the movie data and holidays over a period of two years. Using feature engineerig, categories were created to bin the budget, time displayed in theaters, number of theathers where the movie was shown and the studio that produced the movie. Analazing this dataset, the statistical tests show that there are features that skew the sample. Mainly some weekdays and weekends (Friday to Sunday). When constructing the linear models, a baseline was a Linear Regression Model according to the R^2 score and the residuals vs predictors. Then we tried a boosting technique and a classifier: Gradient Boosting and Random Forests. Random Forest regression probed to have a better score than linear regression. Also we treated the data as a time series and used an ARIMA model to test the forecasting. But this model goes againt the empirical and statistical findings about the importance of the end of the week (Friday to Sunday). We can conclude that random forests works better to predict attendance performed better with this data set. Random Forest is a machine learning technique that does not require preselecting the covariates and it naturally avoids the hazard of overfitting. It also captures the importance of holidays and weekends in the attendance to theaters forecast.
